@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<title>Friseur Salon</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<style type="text/css">
+			* {
+				font-family: georgia;
+			}
+			#carouselIndicators {
+				height: 600px;	
+			}
+			.carousel-inner {
+				width: 100%;
+				height: 570px;
+				align-content: center;
+			}
+			h2 {
+				color: slategrey;
+				text-align: center;
+			}
+			.appoint {
+				max-width: 75%;
+				margin: 0 auto 5rem auto;
+			}
+			#appoint1 {
+				float: left;
+				margin-right: 150px; 
+			}
+			table {
+    		border-collapse: collapse;
+    		width: 30%;
+			}
+			table, td, th {
+    		border: 1px solid black;
+			}
+			td, th {
+				width: 150px;
+			}
+			th {
+				background-color: LightGrey;
+			}
+			nav, #carouselIndicators, #accordion, footer, #cards {
+				margin: 0 auto;
+				max-width: 75%;
+				padding-bottom: 50px;
+			}
+			h1 {
+				color: slategrey;
+			}
+			.row {
+				box-sizing: border-box;
+			}
+			.column {
+    		float: left;
+    		padding: 10px;
+  		}
+  		.left, .right {
+			  width: 40%;
+			  background-color: white !important;
+			  text-align: center;
+			}
+			.middle {
+			  width: 20%;
+			}
+			.contacts {
+				width: 100%;
+			}
+			.card-img-top {
+				height: 300px;
+				width: 100%;
+				object-fit: contain;
+			}
+		</style>
+  </head>
+
+  <body>	     
+  		<nav class="navbar navbar-light bg-light justify-content-between">
+	  		<a class="navbar-brand"><h1>Hairdresser Hans</h1></a>
+	  		<form class="form-inline">
+			    <a href="#services" class="nav-link">Our services</a>
+			    <a href="#appointment" class="nav-link">Make an appointment</a>
+			    <a href="#faq" class="nav-link">FAQ</a>
+			    <a data-toggle="modal" href="#myModal">About us</a>  
+			    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			  </form>
+			</nav>
+
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="ModalLongTitle"">About us</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <p>At Hans hairsalon we are passionate about meeting the unique need of our clients and creating a style that highlights their natural beauty. We create a perfect style by listening to our clients' desires, whether they are a business professional or someone who wants to sport the trendiest styles.</p>
+				      	</br>
+				      	<p>We pride ourselves in keeping up with our educational and therefore, we always bring a fresh perspective to our work. Our atmosphere is comfortable and professional..a taste of Vienna and Austria.</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="http://kellerwerker.de/wp-content/uploads/2015/01/IMG_41481.jpg" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="https://gl-images.condecdn.net/image/Lw2Aj5zKreA/crop/2040/0.46875/f/curlyhair_glamour_4sep18istock-670581190_sf.jpg" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="https://images.pexels.com/photos/247885/pexels-photo-247885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+
+  		<div>
+  			<h2 id="services">Our services</h2>
+   			<div class="form-inline" id="cards">
+	  			<div class="card" style="width: 22rem;">
+	  				<div class="card-body">
+					    <h5 class="card-text" style="float: left;">Styling</h5>
+					    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sXhRMRkGD06_GOQTI5pjgAYSztbRIldB7Oa7JHS3s5vDUQ0PfA" alt="colors" class="rounded-circle" style="width: 65px; float: right;">
+					  </div>
+					  <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0614/9325/files/drystle_c8a874ca-8b95-4fc0-bb0c-2847e834b80f.png?v=1481664465" alt="Card image cap">
+					</div>
+					<div class="card" style="width: 22rem;">
+	  				<div class="card-body">
+					    <h5 class="card-text" style="float: left;">Coloring</h5>
+					    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGzv7YD_JjjLDydXuwpOMUAsGWQeJKqC9XJxw5NAq9VduJXL3" alt="colors" class="rounded-circle" style="width: 65px; float: right;">
+					  </div>
+					  <img class="card-img-top" src="https://content.latest-hairstyles.com/wp-content/uploads/fiery-ombre-hair-color.jpg" alt="Card image cap">
+					</div>
+					<div class="card" style="width: 22rem;">
+	  				<div class="card-body">
+					    <h5 class="card-text" style="float: left;">Haircuts</h5>
+					    <img src="https://kathleenhalme.com/images/haircut-clipart-tool-7.jpg" alt="colors" class="rounded-circle" style="width: 65px; float: right;">
+					  </div>
+					  <img class="card-img-top" src="http://men-haircutstyle.net/wp-content/uploads/2017/06/Hairstyle-For-Men-With-Long-Hair-along-with-Mens-Straight-Hair-Cut-2017.jpg" alt="Card image cap">
+					</div>
+				</div>
+  		</div>
+
+  		<div>
+  			<h2 id="appointment">Make an appointment</h2>
+  			<div class="appoint">
+	  			<div class="form-inline" id="appoint1">
+	  				<form>
+						  <div class="form-group">
+						    <input type="name" class="form-control" id="InputName" placeholder="First and last name">
+						  </div>
+						  <div class="form-group">
+						    <input type="number" class="form-control" id="InputNumber" placeholder="Phone number">
+						  </div>
+						  <div class="form-group">
+						    <input type="textarea" class="form-control" id="InputDate" placeholder="Date">
+						  </div>
+						  <div class="form-group">
+						    <textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="Other info (haircut wishes etc.)"></textarea>
+						  </div>
+						  <div class="form-group">
+							  <div class="form-check">
+							    <input type="checkbox" class="form-check-input" id="gridCheck">
+							    <label class="form-check-label" for="gridCheck">I agree that Hans is the best friseur</label>
+							  </div>
+							</div>
+							  <button type="submit" class="btn btn-primary">Send</button>
+						</form>
+	  			</div>
+	  			<div class="form-inline" id="appoint2">
+	  				<table>
+						  <tr>
+						    <th>Day</th>
+						    <th>Working hours</th>
+						  </tr>
+						  <tr>
+						    <td>Monday</td>
+						    <td>8.00-16.00</td>
+						  </tr>
+						  <tr>
+						    <td>Tuesday</td>
+						    <td>10.00-18.00</td>
+						  </tr>
+						  <tr>
+						    <td>Wednesday</td>
+						    <td>8.00-16.00</td>
+						  </tr>
+						  <tr>
+						    <td>Thursday</td>
+						    <td>8.00-16.00</td>
+						  </tr>
+						  <tr>
+						    <td>Friday</td>
+						    <td>12.00-20.00</td>
+						  </tr>
+						  <tr>
+						    <td>Saturday</td>
+						    <td>8.00-16.00</td>
+						  </tr>
+						  <tr>
+						    <td>Sunday</td>
+						    <td>8.00-12.00</td>
+						  </tr>
+						</table>
+					</div>
+  			</div>
+  		</div>
+
+
+
+		 	<div>
+		  	<h2 id="faq">FAQ (frequently asked questions)</h2>
+	 		</div>
+
+			 <div id="accordion">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Do you have gift certificates?
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			      <div class="card-body">
+			        Gift sertificates are avialable for purchase in the salon or over the phone. If you purchase a gift sertificate over the phone, we can either mail it to your lucky recipient or simply keep it in our files. Salon gift sertificates are no redeemable for cash or refundable.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingTwo">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Can I bring my pet along?
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          What awards did you receive so far?
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+  		<footer>
+  			<div class="FirstRow">
+				  <div class="column left" style="background-color:#aaa;">
+				    <h2>Contact</h2>
+				    <ul class="list-unstyled">
+				    	<li>Friseur Hans GmbH</li>
+				    	<li>Tax number: 321654987</li>
+				    	<li>Friseurgasse 5, 1020 Wien</li>
+				    	<li>Phone: 0655/5423889</li>
+				    	<li>E-mail: friseur.hans@f-hans.com</li>
+				    </ul>
+				  </div>
+				  <div class="column middle" style="background-color:#bbb;">
+				    <img class="contacts" src="https://www.ksta.de/image/23451384/2x1/940/470/f70878b1be42c41d85107e284f687b8d/KU/71-93909933--enzo-verpasst--07-01-2016-11-26-49-251-.jpg">
+				  </div>
+				  <div class="column right" style="background-color:#ccc;">
+				    <h2>Navigation</h2>
+				    <ul class="list-unstyled">
+				    	<li>Our Services</li>
+				    	<li>Make an apppointment</li>
+				    	<li>FAQ</li>
+				    	<li>About us</li>
+				    </ul>
+				  </div>
+				</div>
+
+  		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
